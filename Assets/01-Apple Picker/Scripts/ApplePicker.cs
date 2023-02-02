@@ -10,7 +10,7 @@ public class ApplePicker : MonoBehaviour {
     public float basketBottomY = -14f;
     public float basketSpacingY = 2f;
     public List<GameObject> basketList;
-
+    public int basketIndex = 1;
 
 
     void Start () {
@@ -26,6 +26,8 @@ public class ApplePicker : MonoBehaviour {
         }
     }
     
+
+
     public void AppleDestroyed() {
         // Destroy all of the falling apples
         GameObject[] tAppleArray=GameObject.FindGameObjectsWithTag("Apple");
@@ -34,13 +36,17 @@ public class ApplePicker : MonoBehaviour {
         }
         // Destroy one of the baskets // e
         // Get the index of the last Basket in basketList
-        int basketIndex = basketList.Count-1;
+        basketIndex = basketList.Count-1;
         // Get a reference to that Basket GameObject
         GameObject tBasketGO = basketList[basketIndex];
         // Remove the Basket from the list and destroy the GameObject
         basketList.RemoveAt( basketIndex );
         Destroy( tBasketGO );
-        
+
+        if ( basketList.Count == 0 ) {
+            SceneManager.LoadScene( "_Scene_0" ); // a
+        }
+
     }
     
 }
