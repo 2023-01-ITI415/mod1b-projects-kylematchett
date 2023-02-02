@@ -9,6 +9,7 @@ public class Basket : MonoBehaviour {
     void Start() {
         // Find a reference to the ScoreCounter GameObject
         GameObject scoreGO = GameObject.Find("ScoreCounter"); // b
+       
         // Get the Text Component of that GameObject
         scoreGT = scoreGO.GetComponent<Text>(); // c
         // Set the starting number of points to 0
