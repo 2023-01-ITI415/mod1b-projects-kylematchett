@@ -40,6 +40,7 @@ public class ApplePicker : MonoBehaviour {
         // Remove the Basket from the list and destroy the GameObject
         basketList.RemoveAt( basketIndex );
         Destroy( tBasketGO );
+        
     }
     
 }
