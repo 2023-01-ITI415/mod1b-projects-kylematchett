@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent ( typeof(Renderer) )]
 public class Goal : MonoBehaviour
 {
 	static public bool 	goalMet = false;
@@ -9,26 +10,18 @@ public class Goal : MonoBehaviour
 	void OnTriggerEnter(Collider other) {
 		// when the trigger is hit by something
 		// check to see if it's a Projectile 
-		if (other.gameObject.tag == "Projectile") {
-			// if so, set goalMet = true
+		Projectile proj = other.GetComponent<Projectile>();
+		if ( proj != null ) {
+			// If so, set goalMet to true
 			Goal.goalMet = true;
-
-			// also set the alpha of the color of higher opacity
+			// Also set the alpha of the color to higher opacity
 			Material mat = GetComponent<Renderer>().material;
+			// b
 			Color c = mat.color;
-			c.a = 1;
+			//c.a = 0.75f;
+			c= new Color(0,0,255);
 			mat.color = c;
 		}
 	}
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	
 }
