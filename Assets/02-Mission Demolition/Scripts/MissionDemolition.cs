@@ -42,7 +42,7 @@ public class MissionDemolition : MonoBehaviour {
     void StartLevel() {
         // Get rid of the old castle if one exists
         if (castle != null) {
-        Destroy( castle );
+            Destroy( castle );
         }
         // Destroy old projectiles if they exist (the method is not yet written)
         Projectile.DESTROY_PROJECTILES(); // This will be underlined in red // d
@@ -57,6 +57,7 @@ public class MissionDemolition : MonoBehaviour {
         UpdateGUI();
 
         mode = GameMode.playing;
+        FollowCam.SWITCH_VIEW( FollowCam.eView.both );
     }
 
     void UpdateGUI() {
@@ -72,7 +73,7 @@ public class MissionDemolition : MonoBehaviour {
         if ( (mode == GameMode.playing) && Goal.goalMet ) {
             // Change mode to stop checking for level end
             mode = GameMode.levelEnd;
-
+            FollowCam.SWITCH_VIEW( FollowCam.eView.both );
             // Start the next level in 2 seconds
             Invoke("NextLevel", 2f);
             // e
