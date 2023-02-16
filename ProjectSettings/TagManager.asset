@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Apple
+  - CueBall
+  - Stick
+  - 8Ball
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -17,10 +21,10 @@ TagManager:
   - AppleTree
   - Apple
   - Basket
-  - 
-  - 
-  - 
-  - 
+  - Stick
+  - CueBall
+  - Ball
+  - Table
   - 
   - 
   - 
