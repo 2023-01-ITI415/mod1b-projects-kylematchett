@@ -9,6 +9,8 @@ TagManager:
   - Stick
   - 8Ball
   - Ball
+  - Red
+  - Blue
   layers:
   - Default
   - TransparentFX
