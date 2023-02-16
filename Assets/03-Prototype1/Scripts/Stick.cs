@@ -12,7 +12,7 @@ public class Stick : MonoBehaviour{
     [Header("Dynamic")]
     private GameObject CueBall;
     private Vector3 Pos;
-    private float Dist = 12f;
+    private float Dist = 11f;
     private float Power = 0;
 
     private GameObject stick;
