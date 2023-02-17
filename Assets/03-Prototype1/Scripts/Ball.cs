@@ -19,6 +19,7 @@ public class Ball : MonoBehaviour
 
         
         if (this.transform.position.y <-5){
+            this.gameObject.SetActive(false);
             this.transform.position = new Vector3(0,-2,0);
             rb.constraints = RigidbodyConstraints.FreezePosition;
             if (this.tag == "Red")

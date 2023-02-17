@@ -87,7 +87,7 @@ public class Stick : MonoBehaviour{
 
             }
             Power = (stick.transform.position.x - Pos.x) * (stick.transform.position.x - Pos.x) + (stick.transform.position.z - Pos.z) * (stick.transform.position.z - Pos.z);
-            Power = Power*0.2f;
+            Power = Power*0.1f;
         }else{
 
             float z = Convert.ToSingle(Math.Sin(theta) * 1.15);
