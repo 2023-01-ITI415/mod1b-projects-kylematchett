@@ -25,7 +25,7 @@ public class CueBall : MonoBehaviour
         }else if(rb.velocity.magnitude < 0.1 && rb.velocity.magnitude !=0){
             rb.velocity = new Vector3(0f,0f,0f);
             rb.angularVelocity = new Vector3(0f,0f,0f);
-        }else if(rb.velocity.magnitude < 1.5){
+        }else if(rb.velocity.magnitude < 3){
             rb.velocity = rb.velocity * 0.9f;
 
         }

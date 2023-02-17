@@ -25,6 +25,8 @@ public class Ball : MonoBehaviour
                 BallCounter.red--;
             else if (this.tag == "Blue")
                 BallCounter.blue--;
+            else if (this.tag == "8Ball")
+                BallCounter.black--;
 
         }else if( this.transform.position.y >01.625){
             this.transform.position = new Vector3(this.transform.position.x,01.625f, this.transform.position.z);
