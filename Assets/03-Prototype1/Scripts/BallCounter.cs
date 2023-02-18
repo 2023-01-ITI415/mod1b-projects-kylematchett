@@ -13,7 +13,7 @@ public class BallCounter : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(red==0 && blue ==0 && black == 0)
+        if((red==0 && blue ==0 && black == 0) || black ==0)
         {
             SceneManager.LoadScene("Main-Prototype 1");
         }
