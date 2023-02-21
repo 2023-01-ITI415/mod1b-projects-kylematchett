@@ -15,6 +15,9 @@ public class BallCounter : MonoBehaviour
     {
         if((red==0 && blue ==0 && black == 0) || black ==0)
         {
+            blue = 7;
+            red = 7;
+            black = 1;
             SceneManager.LoadScene("Main-Prototype 1");
         }
     }
