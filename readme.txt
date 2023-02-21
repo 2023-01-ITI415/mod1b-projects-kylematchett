@@ -1,2 +1,2 @@
-my goal when making a this project was to make pool with satisfying physics.  I wanted its machanics to be able to follow the rules of the game without the player having to do it themselves.  So when all balls of of one color and the 8 ball are gone or just the 8 ball is gone, the game ends.
+my goal when making a this project was to make pool with satisfying physics.  I wanted its mechanics to be able to follow the rules of the game without the player having to do it themselves.  So when all balls of of one color and the 8 ball are gone or just the 8 ball is gone, the game ends.
 Left clicking will hit the cue ball in the direction that the stick is pointed in.
