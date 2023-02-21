@@ -13,7 +13,7 @@ public class BallCounter : MonoBehaviour
     
     void FixedUpdate()
     {
-        if((red==0 && blue ==0 && black == 0) || black ==0)
+        if( (blue ==0 && black == 0)|| (red==0 && black == 0) || black ==0)
         {
             blue = 7;
             red = 7;
